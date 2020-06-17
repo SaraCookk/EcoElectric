@@ -38,6 +38,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
+        include: '/src/app.js',
         exclude: /node_modules/,
         loader: "babel-loader"
       }
