@@ -4,7 +4,8 @@
   "description": "eco electric LED site for Warp Design",
   "main": "index.js",
   "scripts": {
-    "build": "webpack-dev-server",
+    "build": "webpack",
+    "dev": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
