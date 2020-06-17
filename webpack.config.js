@@ -1,16 +1,15 @@
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
   entry: './src/app.js',
   output: {
-    filename: 'bundle.js',
+    filename: 'main.[contentHash].js',
     path: path.resolve(__dirname, 'dist')
   },
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 8080
-  },
+  plugins: [new HtmlWebpackPlugin({
+    template: './src/template.html'
+  })],
   module: {
     rules: [
       {
