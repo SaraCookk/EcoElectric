@@ -15,6 +15,9 @@
 
 h1, h2, h3, h4 {
   font-family: 'MyApercu';
+  strong {
+    font-weight: 900;
+  }
 }
 
 p {
@@ -28,11 +31,6 @@ a {
 .bg-orange {
   background-color: #eb8a3b;
   color: #fff;
-  &:hover {
-    color: #fff;
-    background-color: #d27427;
-    border-color: #d27427;
-  }
 }
 
 .bg-blue {
@@ -44,4 +42,9 @@ a.eco-button {
   font-size: 18px;
   border-radius: 10px;
   text-transform: uppercase;
+  &.bg-orange:hover {
+    color: #fff;
+    background-color: #d27427;
+    border-color: #d27427;
+  }
 }
