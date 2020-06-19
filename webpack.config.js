@@ -1,4 +1,5 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
@@ -7,9 +8,15 @@ module.exports = {
     filename: 'main.[contentHash].js',
     path: path.resolve(__dirname, 'dist')
   },
-  plugins: [new HtmlWebpackPlugin({
-    template: './src/template.html'
-  })],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/template.html'
+    }),
+    new webpack.ProvidePlugin({
+       $: 'jquery',
+       jQuery: 'jquery'
+    })
+  ],
   module: {
     rules: [
       {
@@ -37,6 +44,28 @@ module.exports = {
           {
             // Loads a SASS/SCSS file and compiles it to CSS
             loader: 'sass-loader'
+          }
+        ]
+      },    
+      {
+         test: /\.(png|svg|jpg|gif)$/,
+         use: [{
+           loader: 'file-loader',
+           options: {
+             name: '[name].[ext]',
+             outputPath: 'images/'
+           }
+         }],
+      },
+      {
+        test: /\.(eot|svg|ttf|otf|woff)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
           }
         ]
       },

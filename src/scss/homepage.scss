@@ -1,0 +1,17 @@
+#homepage {
+  main {
+    padding-top: 73px;
+    position: relative;
+    background: url('../images/eco_electric_bg.png') center center no-repeat;
+    background-size: cover;
+    section {
+      background: none;
+    }
+  }
+  header {
+    height: 73px;
+    margin-bottom: -73px;
+    //background: none;
+    position: relative;
+  }
+}
