@@ -20,7 +20,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(scss)$/,
+        test: /\.(scss|css)$/,
         use: [
           {
             // Adds CSS to the DOM by injecting a `<style>` tag
@@ -46,7 +46,7 @@ module.exports = {
             loader: 'sass-loader'
           }
         ]
-      },    
+      },
       {
          test: /\.(png|svg|jpg|gif)$/,
          use: [{
@@ -58,7 +58,7 @@ module.exports = {
          }],
       },
       {
-        test: /\.(eot|svg|ttf|otf|woff)$/,
+        test: /\.(eot|svg|ttf|otf|woff|woff2)$/,
         use: [
           {
             loader: 'file-loader',

@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'MyApercu';
+  src: url('../fonts/ApercuRegular.otf');
+}
+
+@font-face {
+  font-family: 'MyApercuLight';
+  src: url('../fonts/ApercuLight.otf');
+}
+
+@font-face {
+  font-family: 'MyApercuMedium';
+  src: url('../fonts/ApercuMedium.otf');
+}
+
+h1, h2, h3, h4 {
+  font-family: 'MyApercu';
+}
+
+p {
+  font-family: 'MyApercuLight';
+}
+
+a {
+  font-family: 'MyApercuMedium';
+}
+
+.bg-orange {
+  background-color: #eb8a3b;
+  color: #fff;
+  &:hover {
+    color: #fff;
+    background-color: #d27427;
+    border-color: #d27427;
+  }
+}
+
+.bg-blue {
+  background-color: #3b5455;
+  color: #fff;
+}
+
+a.eco-button {
+  font-size: 18px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
