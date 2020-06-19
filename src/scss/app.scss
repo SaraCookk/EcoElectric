@@ -1,1 +1,24 @@
 @import "~bootstrap/scss/bootstrap";
+@import "./homepage.scss";
+
+@font-face {
+  font-family: 'MyApercu';
+  src: url('../fonts/ApercuRegular.otf');
+}
+
+@font-face {
+  font-family: 'MyApercuLight';
+  src: url('../fonts/ApercuLight.otf');
+}
+
+@font-face {
+  font-family: 'MyApercuMedium';
+  src: url('../fonts/ApercuMedium.otf');
+}
+
+h1, h2, h3, h4 {
+  font-family: 'MyApercu';
+}
+p {
+  font-family: 'MyApercuLight';
+}
