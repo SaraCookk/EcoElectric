@@ -70,6 +70,11 @@ module.exports = {
         ]
       },
       {
+        // HTML LOADER
+        test: /\.html$/,
+        loader: 'html-loader'
+      },
+      {
         test: /\.js$/,
         include: '/src/app.js',
         exclude: /node_modules/,

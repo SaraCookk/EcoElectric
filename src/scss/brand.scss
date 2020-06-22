@@ -1,3 +1,5 @@
+$eco-green: #94d28d;
+
 @font-face {
   font-family: 'MyApercu';
   src: url('../fonts/ApercuRegular.otf');
@@ -36,6 +38,15 @@ a {
 .bg-blue {
   background-color: #3b5455;
   color: #fff;
+}
+
+.bg-green {
+  background-color: $eco-green;
+}
+
+.bg-green-light {
+  background-color: #d5e7d3;
+  color: #eb8a3b;
 }
 
 a.eco-button {
