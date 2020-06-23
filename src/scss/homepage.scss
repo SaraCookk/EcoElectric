@@ -16,6 +16,11 @@
     //background: none;
     position: relative;
   }
+  form {
+    input {
+      background-color: rgba(213, 231, 211, 0.6);
+    }
+  }
   .card {
     background: url('../images/homepage_squares.png');
     background-blend-mode: soft-light;

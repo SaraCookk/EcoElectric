@@ -1,4 +1,5 @@
 $eco-green: #94d28d;
+$eco-blue: #113e45;
 
 @font-face {
   font-family: 'MyApercu';
@@ -17,13 +18,15 @@ $eco-green: #94d28d;
 
 h1, h2, h3, h4 {
   font-family: 'MyApercu';
+  color: $eco-blue;
   strong {
     font-weight: 900;
   }
 }
 
-p {
+p, label {
   font-family: 'MyApercuLight';
+  color: $eco-blue;
 }
 
 a {
@@ -36,7 +39,7 @@ a {
 }
 
 .bg-blue {
-  background-color: #3b5455;
+  background-color: $eco-blue;
   color: #fff;
 }
 
