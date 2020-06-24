@@ -50,7 +50,9 @@ a {
 
 .bg-green-light {
   background-color: #d5e7d3;
-  color: $eco-orange;
+  h3 {
+    color: $eco-orange;
+  }
 }
 
 a.eco-button {
