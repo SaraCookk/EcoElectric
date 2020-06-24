@@ -1,0 +1,67 @@
+$eco-green: #94d28d;
+$eco-blue: #113e45;
+$eco-orange: #eb8a3b;
+
+@font-face {
+  font-family: 'MyApercu';
+  src: url('../fonts/ApercuRegular.otf');
+}
+
+@font-face {
+  font-family: 'MyApercuLight';
+  src: url('../fonts/ApercuLight.otf');
+}
+
+@font-face {
+  font-family: 'MyApercuMedium';
+  src: url('../fonts/ApercuMedium.otf');
+}
+
+h1, h2, h3, h4 {
+  font-family: 'MyApercu';
+  color: $eco-blue;
+  strong {
+    font-weight: 900;
+  }
+}
+
+p, label {
+  font-family: 'MyApercuLight';
+  color: $eco-blue;
+}
+
+a {
+  font-family: 'MyApercuMedium';
+}
+
+.bg-orange {
+  background-color: $eco-orange;
+  color: #fff;
+}
+
+.bg-blue {
+  background-color: $eco-blue;
+  color: #fff;
+}
+
+.bg-green {
+  background-color: $eco-green;
+}
+
+.bg-green-light {
+  background-color: #d5e7d3;
+  h3 {
+    color: $eco-orange;
+  }
+}
+
+a.eco-button {
+  font-size: 18px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  &.bg-orange:hover {
+    color: #fff;
+    background-color: #d27427;
+    border-color: #d27427;
+  }
+}
