@@ -1,22 +1,23 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-var webpack = require('webpack');
+const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 module.exports = {
   entry: './src/app.js',
   output: {
     filename: 'main.[contentHash].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'docs')
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './src/template.html'
     }),
-    new webpack.ProvidePlugin({
-       $: 'jquery',
-       jQuery: 'jquery'
+    new CopyPlugin({
+      patterns: [
+        { from: './src/templates/header.html', to: './templates/header.html' }
+      ],
     })
   ],
   module: {

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head id='header'>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,10 +8,7 @@
     <title>Eco Electric</title>
   </head>
   <body id="homepage">
-    <header>
-      <nav class="navbar fixed-top navbar-light">
-        <a class="navbar-brand" href="#">Fixed top</a>
-      </nav>
+    <header id="navbar">
     </header>
 
     <main role="main" class="main">
@@ -196,6 +193,8 @@
           </div>
         </div>
       </div>
+
+</div>
     <footer class="text-muted">
       <div class="container">
         <p>© 2020 eco electrical contractors south east ltd. All rights reserved.</p>
@@ -204,5 +203,11 @@
         </p>
       </div>
     </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js' crossOrigin='anonymous'></script>
+    <script>
+      $(function(){
+          $("#navbar").load("./templates/header.html");
+      });
+    </script>
   </body>
 </html>
