@@ -1,5 +1,6 @@
 $eco-green: #94d28d;
 $eco-blue: #113e45;
+$eco-orange: #eb8a3b;
 
 @font-face {
   font-family: 'MyApercu';
@@ -34,7 +35,7 @@ a {
 }
 
 .bg-orange {
-  background-color: #eb8a3b;
+  background-color: $eco-orange;
   color: #fff;
 }
 
@@ -49,7 +50,7 @@ a {
 
 .bg-green-light {
   background-color: #d5e7d3;
-  color: #eb8a3b;
+  color: $eco-orange;
 }
 
 a.eco-button {

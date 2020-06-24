@@ -21,6 +21,11 @@
       background-color: rgba(213, 231, 211, 0.6);
     }
   }
+  .testimonial {
+    span {
+      color: $eco-orange;
+    }
+  }
   .card {
     background: url('../images/homepage_squares.png');
     background-blend-mode: soft-light;
