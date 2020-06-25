@@ -1,0 +1,33 @@
+#internal {
+  .case-study {
+    background: url('../images/case_study_bg.png') center center no-repeat;
+    background-size: cover;
+    .jumbotron {
+      background-color: #fff;
+    }
+    .carousel-indicators {
+      bottom: -50px;
+      li {
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background-color: $eco-blue;
+        &.active {
+          background-color: $eco-orange;
+        }
+      }
+    }
+  }
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+  }
+  .carousel-item {
+    h4 {
+      color: $eco-orange;
+    }
+    ul {
+      padding-inline-start: 20px;
+      color: $eco-blue;
+    }
+  }
+}

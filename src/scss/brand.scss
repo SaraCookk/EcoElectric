@@ -46,6 +46,9 @@ a {
 
 .bg-green {
   background-color: $eco-green;
+  li span {
+    color: $eco-blue;
+  }
 }
 
 .bg-green-light {

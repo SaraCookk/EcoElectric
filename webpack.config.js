@@ -14,6 +14,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/template.html'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'educational-buildings.html',
+      template: './src/educational-buildings.html'
+    }),
     new CopyPlugin({
       patterns: [
         { from: './src/templates/header.html', to: './templates/header.html' }
