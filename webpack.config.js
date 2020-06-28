@@ -18,6 +18,10 @@ module.exports = {
       filename: 'educational-buildings.html',
       template: './src/educational-buildings.html'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'savings-calculator.html',
+      template: './src/savings-calculator.html'
+    }),
     new CopyPlugin({
       patterns: [
         { from: './src/templates/header.html', to: './templates/header.html' }
