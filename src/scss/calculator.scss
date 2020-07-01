@@ -1,0 +1,21 @@
+#calculator {
+  .main {
+    background: url('../images/calculator_banner.png') center center no-repeat;
+    background-size: cover;
+  }
+  .bulbs {
+    .bulb-option {
+      background-color: $eco-green-light;
+      img {
+        width: 100%;
+      }
+    }
+    .input-group {
+      border-radius: 5px;
+      background-color: $eco-green-light;
+      input {
+        background-color: $eco-green-light;
+      }
+    }
+  }
+}

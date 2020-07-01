@@ -1,6 +1,7 @@
 $eco-green: #94d28d;
 $eco-blue: #113e45;
 $eco-orange: #eb8a3b;
+$eco-green-light: #d5e7d3;
 
 @font-face {
   font-family: 'MyApercu';
@@ -52,7 +53,7 @@ a {
 }
 
 .bg-green-light {
-  background-color: #d5e7d3;
+  background-color: $eco-green-light;
   h3 {
     color: $eco-orange;
   }
