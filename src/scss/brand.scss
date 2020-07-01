@@ -43,6 +43,12 @@ a {
   font-family: 'MyApercuMedium';
 }
 
+h2 {
+  @media only screen and (max-width: $screen-sm-max) {
+    font-size: 2.5rem !important;
+  }
+}
+
 .bg-orange {
   background-color: $eco-orange;
   color: #fff;
