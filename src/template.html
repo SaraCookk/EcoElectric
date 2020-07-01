@@ -20,7 +20,7 @@
             </a>
             <h1 class="mb-3">Achieving your requirements on schedule and on budget is a standard for us, it’s what we do.</h1>
           </div>
-          <div class="col-md-6 order-md-1 text-center text-md-left pl-0 pr-md-5">
+          <div class="col-md-12 col-lg-6 order-md-1 text-center text-md-left pl-0 pr-md-5">
             <p class="lead mb-4">
               Highly qualified electricians bringing vast experience, skills and support toclients throughout the South Eastcovering all commercial, industrialand domestic projects since 2015.
             </p>
@@ -31,7 +31,7 @@
             <p><strong>or call us on 01234 567890</strong></p>
           </div>
         </div>
-        <img src="images/eco_banner.png" class="banner-image">
+        <img src="images/eco_banner.png" class="d-none d-lg-block banner-image">
       </section>
     </main>
       <div class="container help mb-5">
@@ -207,9 +207,20 @@
     </footer>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js' crossOrigin='anonymous'></script>
     <script>
-      $(function(){
-          $("#navbar").load("./templates/header.html");
+    $(function(){
+        $("#navbar").load("./templates/header.html");
+    });
+    $(document).ready(function(){
+      $(document).on('click', 'button.button', function(){
+        $(".overlay").fadeToggle(200);
+        $(this).toggleClass('btn-open').toggleClass('btn-close');
       });
+      $(document).on('click', '.overlay', function(){
+        $(".overlay").fadeToggle(200);
+        $(".button a").toggleClass('btn-open').toggleClass('btn-close');
+        open = false;
+      });
+    });
     </script>
   </body>
 </html>
