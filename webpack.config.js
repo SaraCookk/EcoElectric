@@ -24,7 +24,8 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: './src/templates/header.html', to: './templates/header.html' }
+        { from: './src/templates/header.html', to: './templates/header.html' },
+        { from: './src/templates/footer.html', to: './templates/footer.html' }
       ],
     })
   ],
