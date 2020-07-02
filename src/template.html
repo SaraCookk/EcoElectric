@@ -103,17 +103,14 @@
           </div>
         </div>
       </div>
-      <div class="py-5">
+      <div class="py-5 philips">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-4">
-              <img src="images/eco_section_4.png" style="
-                  max-width: 100%;
-                  margin-top: -100px;
-              ">
+              <img src="images/eco_section_4.png" class="section-image">
             </div>
             <div class="col-xs-12 col-md-6 pl-md-1 offset-md-1">
-              <h2 class="display-4">We Use <br /><strong>Philips</strong></h2>
+              <h2 class="display-4 mb-5">We Use <br /><img src="./images/philips_logo.png" class="col-4 pl-0" /></h2>
               <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
               <p class="lead mb-4">Quis ipsum suspendisse ultrices gravida. Quis ipsum suspendisse ultrices gravida. Quis ipsum suspendisse ultrices gravida.</p>
             </div>
@@ -195,20 +192,14 @@
           </div>
         </div>
       </div>
-
-</div>
-    <footer class="text-muted">
-      <div class="container">
-        <p>© 2020 eco electrical contractors south east ltd. All rights reserved.</p>
-        <p class="float-right">
-          <a href="#">Back to top</a>
-        </p>
-      </div>
+    </div>
+    <footer id="footer" class="text-muted">
     </footer>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js' crossOrigin='anonymous'></script>
     <script>
     $(function(){
         $("#navbar").load("./templates/header.html");
+        $("#footer").load("./templates/footer.html");
     });
     $(document).ready(function(){
       $(document).on('click', 'button.button', function(){
