@@ -1,6 +1,9 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const TerserJSPlugin = require('terser-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -9,33 +12,46 @@ module.exports = {
     filename: 'main.[contentHash].js',
     path: path.resolve(__dirname, 'docs')
   },
+  optimization: {
+   minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+ },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: './src/template.html'
+      template: './src/template.html',
+      minify: false
     }),
     new HtmlWebpackPlugin({
       filename: 'educational-buildings.html',
-      template: './src/educational-buildings.html'
+      template: './src/educational-buildings.html',
+      minify: false
     }),
     new HtmlWebpackPlugin({
       filename: 'savings-calculator.html',
-      template: './src/savings-calculator.html'
+      template: './src/savings-calculator.html',
+      minify: false
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'content.html',
+      template: './src/content.html',
+      minify: false
     }),
     new CopyPlugin({
       patterns: [
         { from: './src/templates/header.html', to: './templates/header.html' },
         { from: './src/templates/footer.html', to: './templates/footer.html' }
       ],
-    })
+    }),
+    new MiniCssExtractPlugin({
+     filename: "main.[contentHash].css"
+   })
   ],
   module: {
     rules: [
       {
         test: /\.(scss|css)$/,
-        use: [{
-          loader: 'style-loader',
-        }, {
+        use: [
+           MiniCssExtractPlugin.loader, {
           loader: 'css-loader',
         }, {
           loader: 'postcss-loader',
@@ -52,11 +68,13 @@ module.exports = {
       },
       {
          test: /\.(png|svg|jpg|gif)$/,
-         use: [{
+         use: [
+           {
            loader: 'file-loader',
            options: {
              name: '[name].[ext]',
-             outputPath: 'images/'
+             outputPath: 'images/',
+             publicPath: './images/'
            }
          }],
       },
@@ -84,5 +102,5 @@ module.exports = {
         loader: "babel-loader"
       }
     ]
-  }
+  },
 };
