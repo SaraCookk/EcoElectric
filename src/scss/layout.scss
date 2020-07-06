@@ -40,9 +40,14 @@
 .logo {
   width: 200px;
   height: auto;
+  transition: 0.4s;
+}
+#test {
+  padding: 20px 0px;
+  transition: 0.4s;
 }
 main {
-  padding-top: 73px;
+  padding-top: 150px;
   position: relative;
   section {
     background: none;

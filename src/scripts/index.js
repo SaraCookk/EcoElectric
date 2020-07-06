@@ -10,4 +10,17 @@ $(document).ready(function(){
       $(".button a").toggleClass('btn-open').toggleClass('btn-close');
       open = false;
     });
+    window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+        console.log(document.body.scrollTop, document.documentElement.scrollTop);
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          document.getElementById("test").style.padding = "0px 0px";
+          document.getElementById("test").style.backgroundColor = "white";
+          document.getElementById("logo").style.width = "120px";
+        } else {
+          document.getElementById("test").style.padding = "10px 0px";
+          document.getElementById("test").style.backgroundColor = "rgba(0,0,0,0)";
+          document.getElementById("logo").style.width = "200px";
+        }
+      }
   });
