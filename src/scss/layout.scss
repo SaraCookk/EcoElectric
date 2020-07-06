@@ -42,13 +42,16 @@
   height: auto;
   transition: 0.4s;
 }
-#test {
+#navbar-eco {
   padding: 20px 0px;
   transition: 0.4s;
 }
 main {
   padding-top: 150px;
   position: relative;
+  @media screen and (max-width: $screen-sm-max) {
+    padding-top: 80px;
+  }
   section {
     background: none;
   }
