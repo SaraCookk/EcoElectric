@@ -12,14 +12,13 @@ $(document).ready(function(){
     });
     window.onscroll = function() {scrollFunction()};
       function scrollFunction() {
-        console.log(document.body.scrollTop, document.documentElement.scrollTop);
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-          document.getElementById("test").style.padding = "0px 0px";
-          document.getElementById("test").style.backgroundColor = "white";
+          document.getElementById("navbar-eco").style.padding = "0px 0px";
+          document.getElementById("navbar-eco").style.backgroundColor = "white";
           document.getElementById("logo").style.width = "120px";
         } else {
-          document.getElementById("test").style.padding = "10px 0px";
-          document.getElementById("test").style.backgroundColor = "rgba(0,0,0,0)";
+          document.getElementById("navbar-eco").style.padding = "10px 0px";
+          document.getElementById("navbar-eco").style.backgroundColor = "rgba(0,0,0,0)";
           document.getElementById("logo").style.width = "200px";
         }
       }
