@@ -162,14 +162,27 @@ a.eco-button {
   font-size: 18px;
   border-radius: 10px;
   text-transform: uppercase;
-  &.bg-orange:hover {
-    color: #fff;
-    background-color: #d27427;
-    border-color: #d27427;
-  }
   @media only screen and (max-width: $screen-xs) {
     font-size: 17px;
   }
+}
+
+.btn-secondary:hover {
+  color: #fff;
+	background-color: #94d28d;
+	border-color: #9dca98;
+}
+
+button.bg-orange:hover, a.eco-button.bg-orange:hover {
+	color: #fff !important;
+	background-color: #d27427;
+	border-color: #d27427;
+}
+
+button.bg-green:hover, a.eco-button.bg-green:hover {
+    color: #ffffff;
+    background-color: #103e45;
+    text-decoration: none;
 }
 
 .contact {
