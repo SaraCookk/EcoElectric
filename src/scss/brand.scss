@@ -11,7 +11,6 @@ $screen-lg-min: 992px;
 $screen-lg-max: 1199px;
 $screen-xl: 1200px;
 
-/*overlay*/
 .overlay {
 	display:none;
 	position:fixed;
@@ -68,6 +67,19 @@ $screen-xl: 1200px;
 .wrap ul.wrap-nav ul li a:hover {
 	color:#34B484;
 }
+
+.testimonial {
+	p.lead {
+		strong {
+			font-size: 1.5rem;
+			font-weight: 600;
+			span {
+				color: $eco-blue;
+			}
+		}
+	}
+}
+
 @media screen and (max-width:48em) {
 	.wrap ul.wrap-nav>li {
 		width:100%;
