@@ -11,7 +11,6 @@ $screen-lg-min: 992px;
 $screen-lg-max: 1199px;
 $screen-xl: 1200px;
 
-/*overlay*/
 .overlay {
 	display:none;
 	position:fixed;
@@ -68,6 +67,19 @@ $screen-xl: 1200px;
 .wrap ul.wrap-nav ul li a:hover {
 	color:#34B484;
 }
+
+.testimonial {
+	p.lead {
+		strong {
+			font-size: 1.5rem;
+			font-weight: 600;
+			span {
+				color: $eco-blue;
+			}
+		}
+	}
+}
+
 @media screen and (max-width:48em) {
 	.wrap ul.wrap-nav>li {
 		width:100%;
@@ -150,14 +162,27 @@ a.eco-button {
   font-size: 18px;
   border-radius: 10px;
   text-transform: uppercase;
-  &.bg-orange:hover {
-    color: #fff;
-    background-color: #d27427;
-    border-color: #d27427;
-  }
   @media only screen and (max-width: $screen-xs) {
     font-size: 17px;
   }
+}
+
+.btn-secondary:hover {
+  color: #fff;
+	background-color: #94d28d;
+	border-color: #9dca98;
+}
+
+button.bg-orange:hover, a.eco-button.bg-orange:hover {
+	color: #fff !important;
+	background-color: #d27427;
+	border-color: #d27427;
+}
+
+button.bg-green:hover, a.eco-button.bg-green:hover {
+    color: #ffffff;
+    background-color: #103e45;
+    text-decoration: none;
 }
 
 .contact {
