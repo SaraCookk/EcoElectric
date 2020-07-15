@@ -93,7 +93,7 @@ module.exports = {
       {
         // HTML LOADER
         test: /\.html$/,
-        loader: 'html-loader'
+        loader: 'html-loader?minimize=false'
       },
       {
         test: /\.js$/,
